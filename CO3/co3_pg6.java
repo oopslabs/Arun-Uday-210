@@ -36,7 +36,6 @@ class Circle implements Shape{
 		System.out.println("Perimeter of Circle= "+(2*3.14*r));
 	}
 }
-
 class Rect implements Shape{
 	int l,b;
 	Rect(){
