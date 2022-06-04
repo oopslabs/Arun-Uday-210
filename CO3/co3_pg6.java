@@ -3,63 +3,53 @@ import java.util.Scanner;
 public class co3_pg6 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int ch;
-		Inter I;
+		System.out.println("----Circle----");
 		Circle obj1= new Circle();
-		
-		Rect obj2=new Rect();
-		System.out.println("Area of Circle");
-		I=obj1;
 		obj1.area();
-		System.out.println("Perimeter of Circle");
 		obj1.perimeter();
-		System.out.println("Area of Rectangle");
-		I=obj2;
+		System.out.println("----Rectangle----");
+		Rect obj2=new Rect();
 		obj2.area();
-		System.out.println("Perimeter of Rectangle");
 		obj2.perimeter();		
 		
 	}
 }
 
-interface Inter{
+interface Shape{
 	void area();
 	void perimeter();
 
 }
 
-class Circle implements Inter{
-	public void area(){
+class Circle implements Shape{
+	int r;
+	Circle(){
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the radius");
-		int r=s.nextInt();
+		r=s.nextInt();
+	}
+	public void area(){
 		System.out.println("Area of Circle= "+(3.14*r*r));
 		
 	}
 	public void perimeter(){
-		Scanner s=new Scanner(System.in);
-		System.out.println("Enter the radius");
-		int r=s.nextInt();
 		System.out.println("Perimeter of Circle= "+(2*3.14*r));
 	}
 }
 
-class Rect implements Inter{
-	public void area(){
+class Rect implements Shape{
+	int l,b;
+	Rect(){
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the l and b");
-		int l=s.nextInt();
-		int b=s.nextInt();
+		l=s.nextInt();
+		b=s.nextInt();
+	}
+	public void area(){
 		System.out.println("Area of Rectangle= "+(l*b));
-		
-		
 	}
 	
 	public void perimeter(){
-		Scanner s=new Scanner(System.in);
-		System.out.println("Enter the l and b");
-		int l=s.nextInt();
-		int b=s.nextInt();
 		System.out.println("Perimeter of Rectangle= "+(2*(l+b)));
 	}
 }
