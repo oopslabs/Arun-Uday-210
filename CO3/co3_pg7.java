@@ -54,7 +54,6 @@ public class co3_pg7{
 interface bill{
 	void call_bill();
 }
-
 class create implements bill{
 	int id,qty,uprice,u_total;
 	String name;
