@@ -1,5 +1,9 @@
 package graphics;
 import java.util.*;
+import graphics.rectangle;
+import graphics.triangle;
+import graphics.circle;
+import graphics.square;
 
 public class co4_pg1 {
 	public static void main(String args[]) {
