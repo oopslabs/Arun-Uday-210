@@ -1,4 +1,4 @@
-package graphics;
+
 import java.util.*;
 import graphics.rectangle;
 import graphics.triangle;
