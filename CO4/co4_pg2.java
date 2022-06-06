@@ -1,5 +1,7 @@
-package arithmetic;
+
 import java.util.*;
+
+import arithmetic.calculate;
 
 public class co4_pg2 {
 	public static void main(String args[]) {
