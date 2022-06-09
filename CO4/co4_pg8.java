@@ -44,7 +44,6 @@ class Stack <T>{
 		}
 	}
 }
-
 public class co4_pg8 {
 	public static void main(String args[]) {
 		Stack<Integer> obj=new Stack<>(5);
