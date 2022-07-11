@@ -7,9 +7,10 @@ public class co4_pg11 {
 		l1.add("is");
 		l1.add("Amal");
 		System.out.println("Linked List");
-		for(String st:l1) {
-			System.out.print(st+" ");
-		}
+		Iterator<String> itr=l1.iterator(); 
+	 	while(itr.hasNext()){ 
+	 	 	  System.out.println(itr.next()); 
+	 	} 
 		l1.clear();
 		System.out.println();
 		System.out.println("Linked List after clearing"+l1);
