@@ -9,6 +9,7 @@ public class co4_pg17 {
 		for(Map.Entry<Integer,String> e:map.entrySet()) {
 			System.out.println(e.getKey()+"  :  "+e.getValue());
 		}
+		System.out.println("Update 3:"+map.put(3,"Aswin"));
 		System.out.println("Removing 2:"+map.remove(2));
 		for(Map.Entry<Integer,String> e:map.entrySet()) {
 			System.out.println(e.getKey()+"  :  "+e.getValue());
