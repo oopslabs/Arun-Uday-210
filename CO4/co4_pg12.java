@@ -1,3 +1,4 @@
+package hello;
 import java.util.*;
 public class co4_pg12 {
 	public static void main(String[] args){
@@ -15,8 +16,8 @@ public class co4_pg12 {
 		
 		System.out.println(st);
 		
-		System.out.println("Enter the element to be deleted");
-		String sp=sc.nextLine();
+		System.out.println("Enter the position of element to be deleted");
+		int sp=sc.nextInt();
 		st.remove(sp);
 		System.out.println(st);
 	}
